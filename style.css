@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hypercube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#hypercube div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+}
+
+.face1 {
+    transform: translateZ(-50px);
+}
+
+.face2 {
+    transform: rotateY(90deg) translateZ(-50px);
+}
+
+.face3 {
+    transform: rotateY(180deg) translateZ(-50px);
+    
+}
+
+.face4 {
+    transform: rotateY(-90deg) translateZ(-50px);
+    
+}
+
+.face5 {
+    transform: rotateX(-90deg) translateZ(-50px);
+    
+}
+
+.face6 {
+    transform: rotateX(90deg) translateZ(-50px);
+    
+}
+
+.face7 {
+    transform: translateZ(50px);
+    
+}
+
+.face8 {
+    transform: rotateY(90deg) translateZ(50px);
+    
+}
+
+.face9 {
+    transform: rotateY(45deg) rotateX(45deg) translateZ(-50px);
+    
+}
+
+.face10 {
+    transform: rotateY(-45deg) rotateX(45deg) translateZ(-50px);
+    
+}
+
+.face11 {
+    transform: rotateY(-45deg) rotateX(-45deg) translateZ(-50px);
+    
+}
+
+.face12 {
+    transform: rotateY(45deg) rotateX(-45deg) translateZ(-50px);
+    
+}
+
+.face13 {
+    transform: rotateY(45deg) rotateX(45deg) translateZ(50px);
+    
+}
+
+.face14 {
+    transform: rotateY(-45deg) rotateX(45deg) translateZ(50px);
+    
+}
+
+.face15 {
+    transform: rotateY(-45deg) rotateX(-45deg) translateZ(50px);
+    
+}
+
+.face16 {
+    transform: rotateY(45deg) rotateX(-45deg) translateZ(50px);
+    
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    to {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
